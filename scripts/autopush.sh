@@ -3,7 +3,7 @@
 # Usage: ./scripts/autopush.sh [commit-message]
 
 set -euo pipefail
-MSG=${1:-rez3}
+MSG=${1:-rez2}
 
 # Find repo root
 REPO_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || true)
