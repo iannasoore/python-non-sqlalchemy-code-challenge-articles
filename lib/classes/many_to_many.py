@@ -138,9 +138,4 @@ class Magazine:
         if not Article.all:
             return None
         
-        magazine_counts = {}
-        for article in Article.all:
-            magazine = article.magazine
-            magazine_counts[magazine] = magazine_counts.get(magazine, 0) + 1
         
-        return max(magazine_counts, key=magazine_counts.get)
